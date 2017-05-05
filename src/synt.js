@@ -13,5 +13,6 @@ function talk(){
 	//console.log(text);
 	var utterance = new SpeechSynthesisUtterance();
 	utterance.text= texttotalk;
+	utterance.rate = 5;
 	ss.speak(utterance);
 }
