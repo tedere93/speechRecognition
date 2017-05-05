@@ -22,5 +22,5 @@ recog.onend = onEnd();
 recog.onsoundend = onEnd();
 
 recog.onresult = function (e){
-	document.getElementById("text").innerHTML = e.results[0][0].transcript;
+	document.getElementById("text").innerHTML = e.results[0][0].transcript + ": " + e.results[0][0].confidence;
 }
